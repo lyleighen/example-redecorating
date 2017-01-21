@@ -7,4 +7,4 @@ Unless otherwise indicated, content published on this site is published under a 
 
 Background by Karen Arnold - http://www.zazzle.com/roughcollie
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.PNG)
