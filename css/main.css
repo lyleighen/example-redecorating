@@ -1,0 +1,213 @@
+/*  
+	Redecorating website theme by Lydia Leigh
+	Background by Karen Arnold - http://www.zazzle.com/roughcollie
+	Font Awesome by Dave Gandy - http://fontawesome.io
+*/
+
+
+:root {
+	/* colour scheme */
+	--bg-color: #ffffff;
+	--text-color: #000000;
+	
+	/* image colour values */
+	--blue: #A9FFFF; 	/* Background */
+	--orange: #FEBB89; 	/* JavaScript */
+	--yellow: #FFE78F;	/* HTML */
+	--pink: #FF9A9E; 	/* CSS */
+	--lilac: #BDCAFC; 	/* Home */
+	
+	/* fonts */
+	--title-font: 'Wire One', sans-serif;
+	--body-font: 'Roboto', sans-serif;
+	--nav-font: 'Wire One', sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: var(--blue); /* appears if image not available */
+	background-image: url('../img/stripes-background-colorful.jpg');
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: 14px;
+	font-family: var(--body-font);
+	color: var(--text-color);
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+/* aligmment div to allow relative centering in main body */
+.halign-center {
+	width: 75%;
+	min-height: 100%;
+	background-color: var(--bg-color);
+	opacity: 0.8;
+}
+
+/* header */
+header {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+}
+
+header h1 {
+	display: block;
+	color: var(--text-color);
+	font-family: var(--title-font);
+	font-size: 80px;
+	margin: 35px 0px 20px 0px;
+	font-weight: 500;
+	order: 2;
+}
+
+
+
+/* nav */
+nav {
+	margin-top: 10px;
+	color: var(--text-color);
+	display: flex;
+	flex-direction: row;
+	order: 1;		/* actually we want to display this above the title */
+	padding: 0px 20px;
+}
+
+nav a,
+nav a:visited {
+	text-align: center;
+	font-family: var(--nav-font);
+	font-size: 30px;
+	font-weight: 600;
+	flex: 1;
+	display: block;
+	border: 1px solid var(--text-color);
+	color: var(--text-color);
+	padding: 10px 10px;
+	margin: 0px 10px;
+}
+
+#home-link:hover,
+#home-link:active {
+	background-color: var(--lilac);
+	opacity: 0.8;
+}
+
+#css-link:hover,
+#css-link:active {
+	background-color: var(--pink);
+	opacity: 0.8;
+}
+
+#js-link:hover,
+#js-link:active {
+	background-color: var(--orange);
+	opacity: 0.8;
+}
+
+#html-link:hover,
+#html-link:active {
+	background-color: var(--yellow);
+	opacity: 0.8;
+}
+
+/* page content */
+
+#main-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center; 			/* center in page */
+	padding-top: 20px;
+}
+
+#main-text {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 			/* center in page */
+}
+
+.section-header {
+	font-family: var(--title-font);
+	font-weight: 500;
+	font-size: 48px;
+	color:  var(--text-color);
+	padding: 0px;
+	margin: 15px;
+}
+
+.section-content {
+	font-family: var(--body-font);
+	font-size: 16px;
+	margin: 5px 30px;
+	padding: 0px 20px 30px 20px;
+	margin-bottom: 30px;
+	text-align: center;
+	border: 1px solid var(--text-color);
+}
+
+#home-section:hover{
+	background-color: var(--lilac);
+}
+
+#css-section:hover{
+	background-color: var(--pink);
+}
+
+#js-section:hover{
+	background-color: var(--orange);
+}
+
+#html-section:hover{
+	background-color: var(--yellow);
+}
+
+textarea {
+	width: 90%;
+	margin-left: 4%; /* total trial and error hack */
+	border: 1px solid var(--text-color);
+}
+
+.textarea-title {
+	font-family: var(--title-font);
+	font-weight: 600;
+	font-size: 32px;
+	color:  var(--text-color);
+	padding: 0px;
+	margin: 5px;
+	margin-left: 5%;
+	align-self: flex-start;
+}
+
+#main-text form {
+	margin-bottom: 35px;
+}
+
+
+/* footer */
+footer {
+	margin-top: 30px;
+	height: 30px;
+	display: flex;
+	width: 90%;
+	color: var(--text-color);
+	font-size: 12px;
+	align-items: space-between;
+	justify-content: space-between;
+	opacity: 0.8;
+}
+
